@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Oradores</title>
+<meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>La conferencia</title>
+   <link rel="stylesheet" href="./css/style.css">
+   <!-- Dependencia de Bootstrap CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <!-- Dependencia de jQuery -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <!-- Dependencia de Bootstrap JS -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+   <!-- Agregamos los archivos JavaScript de Bootstrap -->
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+   <style>
+		.form-control {
+			padding: 0.5rem;
+			font-size: 0.5rem;
+			border-radius: 0.2rem;
+			max-width: 100%;
+			margin-bottom: 0.5rem;
+         text-align: center;
+		}
+		
+		.btn-success {
+			background-color: green;
+			color: white;
+			border-color: green;
+			border-radius: 0.2rem;
+			font-size: 0.8rem;
+			padding: 0.5rem;
+			margin-top: 1rem;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Header y menú de navegación -->
+	<div class="header" id="header">
+      <div class="logo">
+         <img class="imagen-logo" src="./assets/img/codoacodo.png" alt="">
+         <h2>Conf Bs As</h2> </div>
+	<!-- Menú de navegación -->
+	   <div class="nav" id="nav">
+         <a href="#" class="enlace">La conferencia</a>
+         <a href="#orador" class="enlace">Los oradores</a>
+         <a href="" class="enlace">El lugar y la fecha</a>
+         <a href="#conviertete-en-orador" class="enlace">Conviértete en orador</a>
+         <a class="enlace_distint" href="./page/comprarTicket.html">Comprar ticket</a></div>
+   </div>
+
+	<!-- Contenido principal -->
+	<div class="main" id="main">
+      <img class="img-principal" src="./assets/img/hawaii.jpg" alt="Palacio de aguas de Buenas Aires">
+      <div class="card-float">
+         <h1>Conf Bs As</h1>
+            <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p> 
+         <div class="container-enlace">
+            <a class="enlace-1" href="">Quiero ser orador</a>
+            <a class="enlace-2" href="">Comparar ticket</a>
+         </div>
+      </div>
+   </div>
+
+   <!-- Sección cards y oradores-->
+   <section class="container-oradores" id="orador"> 
+      <div class="containerh5">
+         <span class="texto">CONOCE A LOS ORADORES</span>
+      </div>
+      <div class="card-container">
+         <div class="card">
+            <img src="./assets/img/steve.jpg" alt="">
+            <div class="link-container">
+               <a href="#" style="background-color:#FEC107;color:#000;margin-top:5px;border-radius:8px;padding:5px 10px;"><b>JavaScript</b></a>
+               <a href="#" style="background-color:#17A2B9;color:#000;margin-top:5px;border-radius:8px;padding:5px 10px;"><b>React</b></a>
+
+            </div>
+            <h3>Steve Jobs</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nisi, modi dolor eligendi omnis labore illum rerum recusandae, fugiat consequatur alias quas neque possimus suscipit enim non repudiandae dolore laudantium.</p>
+         </div>
+         <div class="card">
+            <img src="./assets/img/bill.jpg" alt="">
+            <div class="link-container">
+               <a href="#" style="background-color:#FEC107;color:#000;margin-top:5px;border-radius:8px;padding:5px 10px;"><b>JavaScript</b></a>
+               <a href="#" style="background-color:#17A2B9;color:#000;margin-top:5px;border-radius:8px;padding:5px 10px;"><b>React</b></a>
+            </div>
+            <h3>Bill Gates</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nisi, modi dolor eligendi omnis labore illum rerum recusandae, fugiat consequatur alias quas neque possimus suscipit enim non repudiandae dolore laudantium.</p>
+         </div>
+         <div class="card">
+            <img src="./assets/img/ada.jpeg" alt="">
+            <div class="link-container">
+               <a href="#" style="background-color:#6D767D;color:#fff;margin-top:5px;border-radius:8px;padding:8px 12px;"><b>Negocios</b></a>
+               <a href="#" style="background-color:#DD3544;color:#fff;margin-top:5px;border-radius:8px;padding:8px 12px;"><b>Startups</b></a>
+            </div>
+            <h3>Ada Lovelace</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nisi, modi dolor eligendi omnis labore illum rerum recusandae, fugiat consequatur alias quas neque possimus suscipit enim non repudiandae dolore laudantium.</p>
+         </div>
+      </div>
+      
+   </section>
+   
+   <style>
+      .card-container {
+         display: flex;
+         justify-content: space-between;
+      }
+      .card .link-container {
+         display: flex;
+      }
+      .card .link-container a {
+         text-transform: capitalize;
+         padding: 5px 10px;
+         margin-right: 10px;
+      }
+   </style>
+   <!-- Sección Bs.As. Octubre-->
+   <section>
+      <div class="contain">
+         <div class="row">
+            <div class="col-sm-6" style="border-right: 1px solid white;">
+               <img class="img-honolulu" src="./assets/img/honolulu.jpg" alt="Palacio de aguas de Buenas Aires">
+            </div>
+            <div class="col-md-6" style="border-left: 1px solid white; background-color:rgb(63, 69, 74); color: white;">
+               <h4>Bs As - Octubre</h4>
+               <h6>Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad- condado consolidada que cubre toda la ciudad (aproximadamente 600 km2 de superficie).</h6>
+               <button style="background-color: rgb(63, 69, 74); border: 1px solid white; color: white; border-radius: 2;">Conocé más</button>
+            </div>
+         </div>
+         </div> 
+      </div>
+   </section>
+
+   <!-- Sección Convertite en orador, completa el siguiente formulario -->
+   <section id="conviertete-en-orador">
+      <div class="footer" id="footer">
+         <div class="row">
+            <div class="col-sm-12 mx-auto text-center">
+               <h6>CONVIÉRTETE EN UN</h6>
+               <h4>ORADOR</h4>
+               <h6>Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</h6>
+               <form action="enviar.php" method="post">
+               <div class="form-row">
+                  <div class="form-group col-sm-12" style="max-width: 300px; margin: 0 auto;">
+                     <div class="row">
+                        <div class="form-group col-sm-6" style="max-width: 400px;">
+                           <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" style="font-size: 16px; text-align: left;" required>
+                        </div>
+                        <div class="form-group col-sm-6" style="max-width: 400px;">
+                           <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido" style="font-size: 16px; text-align: left;" required>
+                        </div>
+                  </div>
+                  <div class="form-group">
+                     <textarea class="form-control" id="asunto" name="asunto" rows="3" placeholder="¿Sobre qué te gustaría hablar?" style="font-size: 14px; text-align: left; margin: 1px; max-width: 400px;" required></textarea>
+                  </div>
+                  <div class="anotate">
+                     <h7 style="text-align: left;">Recuerda incluir un título para tu charla</h7></div>
+                  <button type="submit" class="btn btn-success" style="margin: 0 auto;width: 100%;">Enviar</button>
+               </div>
+            </div>
+            </form>
+         </div>
+      </div>
+      </div>
+   </section>
+   <section id="barralink">
+      <div class="footerbar" id="footerbar">
+         <a class="list-inline-item" href="#preguntas_frecuentes">Preguntas Frecuentes</a>
+         <a class="list-inline-item" href="#contactanos">Contáctanos</a>
+         <a class="list-inline-item" href="#prensa">Prensa</a>
+         <a class="list-inline-item" href="#conferencias">Conferencias</a>
+         <a class="list-inline-item" href="#termycond">Términos y condiciones</a>
+         <a class="list-inline-item" href="#privacidad">Privacidad</a>
+         <a class="list-inline-item" href="#estudiantes">Estudiantes</a>
+      </div>
+   </section>
+   
+</body>
+</html>
